@@ -20,8 +20,8 @@
   </platforms>
   <!-- Dependencies on other packages -->
    <dependencies>
-     <package>marketplace-shibboleth-authentication</package>
-     <package>nuxeo-marketplace-user-registration</package>
+     <package>shibboleth-authentication</package>
+     <package>nuxeo-platform-user-registration</package>
    </dependencies>
   <!-- Conflicts with other packages -->
   <!-- <conflicts> -->
