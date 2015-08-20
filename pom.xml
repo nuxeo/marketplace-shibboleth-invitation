@@ -32,6 +32,7 @@
         <groupId>org.nuxeo.shibboleth.invitation.marketplace</groupId>
         <artifactId>marketplace-shibboleth-invitation</artifactId>
         <version>${project.version}</version>
+        <type>zip</type>
       </dependency>
     </dependencies>
   </dependencyManagement>
