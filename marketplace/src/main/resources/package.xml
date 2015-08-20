@@ -3,7 +3,8 @@
   <title>Shibboleth Invitation Addon</title>
   <description>
     This addon provides the ability to invite external users to join Nuxeo
-    through Nuxeo Authentication and/or Shibboleth Authentication
+    through Nuxeo Authentication and/or
+    Shibboleth Authentication
   </description>
   <home-page>http://www.nuxeo.com</home-page>
   <vendor>Nuxeo</vendor>
@@ -11,7 +12,7 @@
   <uninstaller restart="true" />
   <hotreload-support>false</hotreload-support>
   <require-terms-and-conditions-acceptance>true</require-terms-and-conditions-acceptance>
-   <nuxeo-validation>nuxeo_certified</nuxeo-validation>
+  <nuxeo-validation>nuxeo_certified</nuxeo-validation>
   <production-state>production_ready</production-state>
   <supported>false</supported>
   <platforms>
@@ -19,19 +20,11 @@
     <platform>cap-@DISTRIB_VERSION@-HF*</platform>
   </platforms>
   <visibility>MARKETPLACE</visibility>
-  <!-- Dependencies on other packages -->
-   <dependencies>
-     <package>shibboleth-authentication:2.2.0:2.2.0</package>
-     <package>nuxeo-platform-user-registration:1.5.0:1.5.0</package>
-   </dependencies>
-  <!-- Conflicts with other packages -->
-  <!-- <conflicts> -->
-  <!-- <package>a-conflicting-package:1.0.0:1.0.0</package> -->
-  <!-- </conflicts> -->
-  <!-- Provides features of other packages -->
-  <!-- <provides> -->
-  <!-- <package>an-embedded-package:1.0.0:1.0.0</package> -->
-  <!-- </provides> -->
+  <dependencies>
+    <package>shibboleth-authentication:2.2.0</package>
+    <package>nuxeo-platform-user-registration:1.5.0</package>
+    <package>nuxeo-6.0-HF18</package>
+  </dependencies>
   <license>LGPL 2.1</license>
   <license-url>http://www.gnu.org/licenses/lgpl-2.1.html</license-url>
 </package>
