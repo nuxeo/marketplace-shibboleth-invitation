@@ -34,6 +34,11 @@
         <version>${project.version}</version>
         <type>zip</type>
       </dependency>
+      <dependency>
+        <groupId>org.nuxeo.shibboleth.invitation</groupId>
+        <artifactId>nuxeo-shibboleth-invitation</artifactId>
+        <version>${nuxeo.distribution.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
