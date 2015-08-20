@@ -10,8 +10,8 @@
   </parent>
 
   <artifactId>webdriver</artifactId>
-  <name>Sample functional tests with WebDriver</name>
-  <description>Sample functional tests with WebDriver</description>
+  <name>Functional WebDriver tests for Shibboleth Invitation addon</name>
+  <description>Functional WebDriver tests for Shibboleth Invitation addon</description>
 
   <properties>
     <some.password>setTheValueInYourSettings</some.password>
@@ -36,6 +36,11 @@
       <artifactId>nuxeo-functional-tests</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.nuxeo.shibboleth.invitation.marketplace</groupId>
+      <artifactId>marketplace-shibboleth-invitation</artifactId>
+      <type>zip</type>
+    </dependency>
   </dependencies>
 
   <build>
@@ -58,7 +63,7 @@
             </goals>
             <configuration>
               <argLine>-Dlog4j.configuration=${file.uri.prefix}${basedir}/src/test/resources/log4j.xml
-                -Dnuxeo.log.dir=${build.directory}
+                -Dnuxeo.log.dir=${project.build.directory}
                 -DsomePassword=${some.password}
                 ${it.failsafe.argLine}
               </argLine>
@@ -68,7 +73,7 @@
       </plugin>
       <plugin>
         <groupId>org.nuxeo.build</groupId>
-        <artifactId>nuxeo-distribution-tools</artifactId>
+        <artifactId>ant-assembly-maven-plugin</artifactId>
         <configuration>
           <buildFile>${basedir}/itests.xml</buildFile>
         </configuration>
@@ -147,43 +152,5 @@
       <id>mysql</id>
     </profile>
   </profiles>
-
-  <repositories>
-    <repository>
-      <id>public</id>
-      <url>http://maven.nuxeo.org/nexus/content/groups/public</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>public-snapshot</id>
-      <url>http://maven.nuxeo.org/nexus/content/groups/public-snapshot</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <updatePolicy>always</updatePolicy>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
-
-  <pluginRepositories>
-    <pluginRepository>
-      <id>public</id>
-      <url>http://maven.nuxeo.org/nexus/content/groups/public</url>
-      <name>Nuxeo releases</name>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </pluginRepository>
-  </pluginRepositories>
 
 </project>
