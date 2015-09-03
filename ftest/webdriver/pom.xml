@@ -40,6 +40,14 @@
       <groupId>org.nuxeo.shibboleth.invitation.marketplace</groupId>
       <artifactId>marketplace-shibboleth-invitation</artifactId>
       <type>zip</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.nuxeo.ecm.distribution</groupId>
+      <artifactId>nuxeo-distribution-tomcat</artifactId>
+      <classifier>nuxeo-cap</classifier>
+      <type>zip</type>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 

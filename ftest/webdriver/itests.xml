@@ -14,7 +14,7 @@
   <!-- Override default prepare-environment target to make it download your MP -->
   <target name="prepare-environment" depends="_init,prepare-db,prepare-tomcat,prepare-jboss">
     <copy todir="${out.dir}">
-      <artifact:resolveFile key="org.nuxeo.shibboleth.invitation.marketplace:marketplace-shibboleth-invitation::zip" />
+      <artifact:file key="org.nuxeo.shibboleth.invitation.marketplace:marketplace-shibboleth-invitation::zip" />
     </copy>
   </target>
 
