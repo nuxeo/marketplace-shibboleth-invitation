@@ -18,7 +18,7 @@
     <platform>cap-@DISTRIB_VERSION@</platform>
     <platform>cap-@DISTRIB_VERSION@-HF*</platform>
   </platforms>
-  <visibility>MARKETPLACE</visibility>
+  <visibility>PUBLIC</visibility>
   <!-- Dependencies on other packages -->
    <dependencies>
      <package>shibboleth-authentication</package>
