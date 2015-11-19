@@ -4,7 +4,8 @@
   <description>
     This addon provides the ability to invite external users to join Nuxeo
     through Nuxeo Authentication and/or
-    Shibboleth Authentication
+    Shibboleth Authentication<br/>
+    Nuxeo Hotfix 6.0-HF18 is required.
   </description>
   <home-page>http://www.nuxeo.com</home-page>
   <vendor>Nuxeo</vendor>
@@ -23,7 +24,6 @@
   <dependencies>
     <package>shibboleth-authentication:2.2.0</package>
     <package>nuxeo-platform-user-registration:1.5.0</package>
-    <package>nuxeo-6.0-HF18</package>
   </dependencies>
   <license>LGPL 2.1</license>
   <license-url>http://www.gnu.org/licenses/lgpl-2.1.html</license-url>
