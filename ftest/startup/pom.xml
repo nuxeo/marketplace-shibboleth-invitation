@@ -8,8 +8,8 @@
   </parent>
 
   <artifactId>webdriver</artifactId>
-  <name>Functional WebDriver tests for Shibboleth Invitation addon</name>
-  <description>Functional WebDriver tests for Shibboleth Invitation addon</description>
+  <name>Startup tests for Shibboleth Invitation addon</name>
+  <description>Startup tests for Shibboleth Invitation addon</description>
 
   <properties>
     <some.password>setTheValueInYourSettings</some.password>
@@ -42,8 +42,7 @@
     </dependency>
     <dependency>
       <groupId>org.nuxeo.ecm.distribution</groupId>
-      <artifactId>nuxeo-distribution-tomcat</artifactId>
-      <classifier>nuxeo-cap</classifier>
+      <artifactId>nuxeo-server-tomcat</artifactId>
       <type>zip</type>
       <scope>test</scope>
     </dependency>

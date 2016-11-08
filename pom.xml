@@ -20,7 +20,7 @@
     <profile>
       <id>ftest</id>
       <modules>
-        <module>ftest/webdriver</module>
+        <module>ftest/startup</module>
       </modules>
     </profile>
   </profiles>
