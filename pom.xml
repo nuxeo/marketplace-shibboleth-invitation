@@ -12,6 +12,11 @@
   <name>Nuxeo Marketplace packaging of nuxeo-shibboleth-invitation</name>
   <version>1.2.3-SNAPSHOT</version>
 
+  <properties>
+    <marketplace.user.registration.version>1.7.3-SNAPSHOT</marketplace.user.registration.version>
+    <marketplace.shibboleth.authentication.version>2.4.3-SNAPSHOT</marketplace.shibboleth.authentication.version>
+  </properties>
+
   <modules>
     <module>marketplace</module>
   </modules>
@@ -31,6 +36,18 @@
         <groupId>org.nuxeo.shibboleth.invitation.marketplace</groupId>
         <artifactId>marketplace-shibboleth-invitation</artifactId>
         <version>${project.version}</version>
+        <type>zip</type>
+      </dependency>
+      <dependency>
+        <groupId>org.nuxeo.ecm.distribution</groupId>
+        <artifactId>nuxeo-marketplace-user-registration</artifactId>
+        <version>${marketplace.user.registration.version}</version>
+        <type>zip</type>
+      </dependency>
+      <dependency>
+        <groupId>org.nuxeo.ecm.platform</groupId>
+        <artifactId>marketplace-shibboleth-authentication</artifactId>
+        <version>${marketplace.shibboleth.authentication.version}</version>
         <type>zip</type>
       </dependency>
     </dependencies>
