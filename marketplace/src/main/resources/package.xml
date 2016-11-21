@@ -1,10 +1,7 @@
 <!-- See documentation at http://doc.nuxeo.com/x/HgIz -->
 <package type="addon" name="nuxeo-shibboleth-invitation" version="@VERSION@">
   <title>Shibboleth Invitation Addon</title>
-  <description>
-    This addon provides the ability to invite external users to join Nuxeo
-    through Nuxeo Authentication and/or Shibboleth Authentication
-  </description>
+  <description>The Nuxeo Shibboleth Invitation addon provides the ability to invite external user to access the Nuxeo Platform through basic or Shibboleth authentication.</description>
   <home-page>http://www.nuxeo.com</home-page>
   <vendor>Nuxeo</vendor>
   <installer restart="true" />
