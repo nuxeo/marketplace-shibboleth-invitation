@@ -29,6 +29,7 @@ import com.dumbster.smtp.SimpleSmtpServer;
 import com.dumbster.smtp.SmtpMessage;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.nuxeo.ecm.platform.shibboleth.pages.ExtendedDocumentBasePage;
 import org.nuxeo.ecm.platform.shibboleth.pages.InvitationTabSubPage;
@@ -64,6 +65,7 @@ public class ITUserInvitationTest extends ShibbolethTest {
     }
 
     @Test
+    @Ignore
     public void testUserInvitation() {
         loginAsShibbolethUser(NUXEO_URL + "/", ADMINISTRATOR, ADMINISTRATOR);
         Locator.findElementWaitUntilEnabledAndClick(By.linkText("WORKSPACE"));
