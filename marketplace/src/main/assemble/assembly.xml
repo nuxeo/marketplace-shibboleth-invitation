@@ -45,7 +45,7 @@
           <artifact groupId="nuxeo-studio" />
         </includes>
         <excludes>
-          <artifact groupId="org.nuxeo.lib" />
+          <artifact groupId="org.nuxeo.lib*" />
           <artifact scope="test" />
           <artifact scope="provided" />
           <artifact type="pom" />
