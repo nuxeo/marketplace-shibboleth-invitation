@@ -3,18 +3,18 @@
   <parent>
     <groupId>org.nuxeo.ecm.distribution</groupId>
     <artifactId>nuxeo-distribution</artifactId>
-    <version>10.3-SNAPSHOT</version>
+    <version>10.3-I20180919_0126</version>
   </parent>
 
   <groupId>org.nuxeo.shibboleth.invitation.marketplace</groupId>
   <artifactId>parent</artifactId>
   <packaging>pom</packaging>
   <name>Nuxeo Marketplace packaging of nuxeo-shibboleth-invitation</name>
-  <version>1.4.2-SNAPSHOT</version>
+  <version>1.4.2-I20180919_0426</version>
 
   <properties>
-    <marketplace.user.registration.version>1.9.2-SNAPSHOT</marketplace.user.registration.version>
-    <marketplace.shibboleth.authentication.version>2.6.2-SNAPSHOT</marketplace.shibboleth.authentication.version>
+    <marketplace.user.registration.version>1.9.2-I20180919_0408</marketplace.user.registration.version>
+    <marketplace.shibboleth.authentication.version>2.6.2-I20180919_0405</marketplace.shibboleth.authentication.version>
   </properties>
 
   <modules>
