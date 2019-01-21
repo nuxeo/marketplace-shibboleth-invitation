@@ -10,7 +10,7 @@
   <artifactId>parent</artifactId>
   <packaging>pom</packaging>
   <name>Nuxeo Marketplace packaging of nuxeo-shibboleth-invitation</name>
-  <version>1.4.3</version>
+  <version>1.4.4-SNAPSHOT</version>
 
   <properties>
     <marketplace.user.registration.version>1.9.3</marketplace.user.registration.version>
