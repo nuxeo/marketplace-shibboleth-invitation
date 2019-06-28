@@ -10,6 +10,17 @@
   <artifactId>shibboleth-invitation-webdriver</artifactId>
   <name>Shibboleth Invitation Functional Tests</name>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.nuxeo.ecm.distribution</groupId>
+        <artifactId>nuxeo-marketplace-jsf-ui</artifactId>
+        <type>zip</type>
+        <version>${nuxeo.distribution.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
